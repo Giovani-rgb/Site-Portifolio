@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+              <h1 class="header-title">Portfólio</h1>
+              <nav class="nav">
+                <a href="/views/contato.html" class="nav-link">Contatos</a>
+                <a href="/views/projeto.html" class="nav-link">Projetos</a>
+                <a href="/views/sobre.html" class="nav-link">Sobre</a>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+
+        <!-- Perfil -->
+        <section class="profile-section text-center py-5">
+          <div class="container">
+            <img src="img/User.png" class="profile-img mb-3" alt="Giovani G. da Silva" width="150">
+            <h3 class="profile-name">Giovani G. da Silva</h3>
+            <p class="profile-title"><i>Técnico de Informática</i></p>
+          </div>
+        </section>
+
+
+        <!-- Habilidades -->
+        <section class="py-5">
+    <h2 class="text-center mb-4">Habilidades</h2>
+    <div class="row justify-content-center">
+        <!-- Card de Habilidade 1 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="img/htmlcss.jpeg" class="card-img-top" alt="HTML, CSS, JavaScript">
+                <div class="card-body text-center">
+                    <h5 class="card-title">HTML, CSS, JavaScript</h5>
+                    <p class="card-text">Desenvolvimento de páginas web responsivas e interativas.</p>
+                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card de Habilidade 2 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="img/progamimngC.jpeg" class="card-img-top" alt="Linguagem C">
+                <div class="card-body text-center">
+                    <h5 class="card-title">C</h5>
+                    <p class="card-text">Desenvolvimento de micro-aplicações em C.</p>
+                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card de Habilidade 3 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="img/portugol.jpeg" class="card-img-top" alt="Portugol">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Linguagem de Programação Portugol</h5>
+                    <p class="card-text">Sintaxe básica de programação em Português.</p>
+                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card de Habilidade 4 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="img/Java.png" class="card-img-top" alt="Java">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Java</h5>
+                    <p class="card-text">Desenvolvimento de aplicações dinâmicas com Java.</p>
+                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Outros conteúdos como Metodologias Ágeis e Ferramentas de Qualidade aqui -->
+<!-- Metodologias Ágeis -->
+<section class="py-5 bg-light">
+    <h2 class="text-center">Metodologias Ágeis</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Scrum</h3>
+                    <p class="card-text">Scrum é uma metodologia ágil utilizada principalmente para gerenciamento e desenvolvimento de software. Ele organiza o trabalho em sprints, onde são realizadas reuniões diárias (Daily Scrum) para monitorar o progresso.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Kanban</h3>
+                    <p class="card-text">Kanban é uma metodologia ágil que utiliza um sistema visual para gerenciar o trabalho à medida que avança em um processo. O foco está na entrega contínua e na melhoria incremental.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Ferramentas de Qualidade -->
+<section class="py-5 bg-light">
+    <h2 class="text-center">Ferramentas de Qualidade</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">PDCA</h3>
+                    <p class="card-text">PDCA é um método cíclico de gestão de processos que visa a melhoria contínua de produtos, processos ou serviços.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Matriz SWOT</h3>
+                    <p class="card-text">A Matriz SWOT é uma ferramenta utilizada para realizar a análise de cenários, com base nas forças, fraquezas, oportunidades e ameaças do negócio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Rodapé -->
+        <footer class="py-4 text-center">
+            <p>&copy; 2024 Giovani G. da Silva. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #343a40;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(to right, #003366, #002244); /* Gradiente de azul escuro para azul marinho */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra moderada */
+    position: relative;
+}
+
+
+
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+header .nav {
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-link {
+    color: #ffc;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header .nav-link:hover {
+    color: #ff7f50; /* Cor ao passar o mouse */
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .nav {
+        margin-top: 10px;
+        gap: 10px;
+    }
+}
+
+/* Seção de Perfil */
+.profile-section {
+    background-color: #f0e68c; /* Cor de fundo branca */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 40px 20px; /* Espaçamento interno */
+    margin-top: 20px; /* Espaçamento superior */
+    text-align: center; /* Centralizar o texto */
+}
+
+.profile-img {
+    border: 5px solid #007bff; /* Borda azul ao redor da imagem */
+    border-radius: 50%; /* Tornar a imagem redonda */
+    padding: 5px; /* Espaço entre a borda e a imagem */
+    background-color: #fff; /* Cor de fundo da borda */
+}
+
+.profile-name {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #343a40; /* Cor do texto */
+    margin-top: 15px; /* Espaçamento superior */
+}
+
+.profile-title {
+    font-style: italic; /* Estilo de fonte itálico */
+    color: #6c757d; /* Cor do texto */
+    margin: 0; /* Remover margens */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 120px; /* Reduzir tamanho da imagem em telas menores */
+    }
+
+    .profile-name {
+        font-size: 1.25rem; /* Ajustar tamanho da fonte */
+    }
+}
+
+
+/* Habilidades */
+section.py-5 .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 30px; /* Espaço entre os cards */
+}
+
+section.py-5 .card:hover {
+    transform: translateY(-5px);
+}
+
+section.py-5 .card-title {
+    color: #007bff;
+}
+
+/* Metodologias Ágeis */
+section.bg-light {
+    padding: 50px 20px;
+    margin-top: 40px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+}
+
+section.bg-light h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section.py-5 .d-flex {
+        flex-direction: column;
+    }
+
+    section.bg-light .row {
+        flex-direction: column;
+    }
+}
+/* Estilos Gerais do Formulário */
+#contactForm {
+    background-color: #003366; /* Fundo escuro */
+    padding: 20px;
+    border-radius: 10px; /* Bordas mais arredondadas */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+    color: #e0e0e0; /* Cor do texto clara */
+}
+
+/* Estilos dos Rótulos e Campos */
+#contactForm .form-label {
+    font-weight: bold; /* Rótulos em negrito */
+    color: #e0e0e0; /* Cor clara para rótulos */
+}
+
+#contactForm .form-control {
+    background-color: #333; /* Fundo dos campos */
+    border: 1px solid #444; /* Borda cinza escura */
+    color: #e0e0e0; /* Cor do texto dos campos */
+    border-radius: 6px; /* Bordas arredondadas */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra interna para profundidade */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Transição suave */
+}
+
+#contactForm .form-control::placeholder {
+    color: #888; /* Cor do placeholder mais clara para contraste */
+    opacity: 1; /* Garante que a cor do placeholder seja visível */
+}
+#contactForm .form-control:focus {
+    border-color: #00bcd4; /* Cor da borda ao focar no campo */
+    background-color: #444; /* Fundo do campo ao focar */
+    box-shadow: 0 0 0 0.2rem rgba(0, 188, 212, 0.5); /* Sombra azul clara ao focar */
+}
+
+/* Estilos do Botão */
+#contactForm .btn-primary {
+    background-color: #00bcd4; /* Cor de fundo azul elétrico */
+    border-color: #00bcd4; /* Cor da borda azul elétrico */
+    padding: 12px 24px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 6px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+#contactForm .btn-primary:hover {
+    background-color: #0097a7; /* Cor ao passar o mouse */
+    border-color: #0097a7; /* Cor da borda ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais forte ao passar o mouse */
+}
+
+/* Estilos para Feedback */
+#feedback {
+    color: #00e676; /* Cor verde brilhante para feedback positivo */
+    font-weight: bold;
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Cards dos Projetos */
+.project-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 30px; /* Espaçamento entre os cards */
+}
+
+.project-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+    border-bottom: 1px solid #ddd;
+    max-height: 200px; /* Limita a altura da imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir o card */
+}
+
+.project-card .card-body {
+    padding: 20px;
+}
+
+.project-card-title {
+    font-size: 1.25rem;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.project-card-text {
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.project-card a.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .project-card {
+        margin-bottom: 20px;
+    }
+
+    .project-card img {
+        max-height: 150px; /* Reduz a altura da imagem em telas menores */
+    }
+}
+
+/* Seção Sobre */
+.about-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Seção de Texto */
+.about-text {
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-text h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+/* Seção de Metodologias Ágeis */
+.agile-methodologies {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    padding: 40px 20px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.agile-methodologies h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Estilos dos Cards de Metodologias */
+.methodology-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.methodology-card h4 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.methodology-card p {
+    color: #6c757d;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .about-section,
+    .agile-methodologies {
+        padding: 20px;
+    }
+}
+
+
