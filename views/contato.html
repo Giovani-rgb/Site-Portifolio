@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contate-nos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css"/>
+    <script type="module" src="../index.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+    <h1 class="text-center mb-5">Entre em Contato</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form id="contactForm" novalidate>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome Completo</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Seu Nome" required>
+                    <div class="invalid-feedback">Por favor, insira seu nome completo.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Endereço de E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="nome@exemplo.com" required>
+                    <div class="invalid-feedback">Por favor, insira um endereço de e-mail válido.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Assunto</label>
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto da Mensagem" required>
+                    <div class="invalid-feedback">Por favor, insira o assunto da mensagem.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Sua Mensagem</label>
+                    <textarea class="form-control" id="message" name="message" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    <div class="invalid-feedback">Por favor, insira sua mensagem.</div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+            </form>
+            <div id="feedback" class="mt-3"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
