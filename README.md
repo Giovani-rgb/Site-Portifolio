@@ -44,13 +44,13 @@ Para executar o site localmente, siga as etapas abaixo:
 1. **Clone o repositório:**
 
     ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
+    git clone [https://github.com/Giovani-rgb/Site-Portifolio.git]
     ```
 
 2. **Navegue até o diretório do projeto:**
 
     ```bash
-    cd seu-repositorio
+    cd Site-Portifolio
     ```
 
 3. **Abra o arquivo `index.html` no navegador:**
