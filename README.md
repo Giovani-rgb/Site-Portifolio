@@ -23,7 +23,7 @@ Este portfólio foi criado para refletir o meu passado, presente e futuro na car
 - **CSS3** (Bootstrap): Estilização e design responsivo.
 - **JavaScript**: Interatividade e funcionalidades dinâmicas.
 - **Git** e **GitHub**: Controle de versão e hospedagem do código.
-- **[Jekyll](https://jekyllrb.com/)** (opcional): Para gerar um site estático caso queira usar o GitHub Pages.
+
 
 ## 🎨 Design e Usabilidade
 
@@ -65,7 +65,7 @@ Ou simplesmente clique duas vezes no arquivo `index.html` para abri-lo no seu na
 
 O portfólio está hospedado no GitHub Pages e pode ser acessado pelo seguinte link:
 
-[https://Giovani-rgb.github.io/seu-repositorio/](https://Giovani-rgb.github.io/seu-repositorio/)
+[Aqui o link](https://github.com/Giovani-rgb/Site-Portifolio)
 
 ## 🤝 Contribuição
 
@@ -75,7 +75,7 @@ Contribuições, issues e pedidos de novas funcionalidades são bem-vindos! Sint
 
 Tem alguma pergunta ou sugestão? Entre em contato comigo através de:
 
-- **Email**: seuemail@dominio.com
+- **Email**:giovani.silva@aluno.enova.educacao.ba.gov.br
 - **LinkedIn**: [Seu Perfil](https://linkedin.com/in/seu-perfil)
 
 ---
